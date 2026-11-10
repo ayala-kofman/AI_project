@@ -36,13 +36,13 @@ TOP_K = 3
 
 def _configure_llama_index():
     """
-    - LLM: Gemini 1.5 Flash
+    - LLM: Gemini 3.8 Flash
     - Embeddings: local multilingual model
     """
 
     # 🟢 CHANGED: חיבור ישיר ל-Gemini במקום OpenAI
     Settings.llm = GoogleGenAI(
-        model="gemini-2.5-flash",
+        model="gemini-3.8-flash",
         api_key=GEMINI_API_KEY,
     )
 
