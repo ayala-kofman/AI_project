@@ -1,0 +1,9 @@
+llama-index-core==0.14.25
+llama-index-llms-google-genai==0.11.3
+llama-index-embeddings-huggingface==0.8.0
+llama-index-vector-stores-chroma==0.6.0
+chromadb==1.5.9
+streamlit==1.67.0
+python-dotenv==1.2.4
+sentence-transformers==6.2.0
+python-certifi-win32==1.6.1

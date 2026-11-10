@@ -1,0 +1,17 @@
+# Secrets - never commit!
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# ChromaDB - large binary index, can be rebuilt
+chroma_db/
+
+# OS
+.DS_Store
+Thumbs.db
