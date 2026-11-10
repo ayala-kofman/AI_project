@@ -82,19 +82,7 @@ if user_input:
                 result = answer_question(st.session_state["index"], user_input)
 
             answer = result["answer"]
-            sources = result["sources"]
-            expanded = result["expanded_query"]
-
             st.markdown(answer)
-
-            if expanded:
-                with st.expander("🔍 שאלה מורחבת (Query Expansion)"):
-                    st.markdown(f"*{expanded}*")
-
-            if sources:
-                with st.expander("📄 מקורות"):
-                    for s in sources:
-                        st.markdown(f"- {s}")
 
         full_response = answer
         st.session_state["messages"].append(
